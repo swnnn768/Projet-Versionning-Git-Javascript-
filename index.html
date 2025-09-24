@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exchange Rate</title>
+</head>
+<body>
+   <h1>Convertisseur de devise en ligne</h1>
+   <form>
+    <label for="amount">Montant à convertir:</label>
+    <input type="number" id="amount" name="amount" required>
+    <br><br>
+    <label for="fromCurrency">De :</label>
+    <select id="fromCurrency" name="fromCurrency" required>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+    </select>
+    <br><br>
+    <label for="toCurrency">À :</label>
+    <select id="toCurrency" name="toCurrency" required>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+    </select>
+    <br><br>
+    <button type="submit">Convertir</button>
+    <h2 id="result"></h2>
+    
+   </form>
+</body>
+</html>
