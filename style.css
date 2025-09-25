@@ -1,11 +1,11 @@
 h1 {
-    color: rgba(216, 213, 213, 0.887);
+    color: rgba(73, 72, 72, 0.887);
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 35px;
     margin-top: 30px;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #2d3e49;
 }
 
 body {
@@ -26,12 +26,14 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #5aa65a;
     transform: scale(1.05);
     transition: 0.15s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 select, input[type="number"] {
@@ -57,4 +59,10 @@ form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
 }
