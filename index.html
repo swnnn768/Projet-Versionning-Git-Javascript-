@@ -1,36 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Exchange Rate</title>
+  <meta charset="UTF-8">
+  <title>Convertisseur de devises</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>Convertisseur de devise en ligne</h1>
-   <form>
-    <label for="amount">Montant à convertir:</label>
-    <input type="number" id="amount" name="amount" required>
+  <h1>Convertisseur de devises</h1>
+
+  <form id="converterForm">
+    <label for="amount">Montant :</label>
+    <input type="number" id="amount" required>
     <br><br>
+
     <label for="fromCurrency">De :</label>
-    <select id="fromCurrency" name="fromCurrency" required>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
-        <option value="JPY">JPY</option>
-    </select>
+    <select id="fromCurrency"></select>
     <br><br>
+
     <label for="toCurrency">À :</label>
-    <select id="toCurrency" name="toCurrency" required>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
-        <option value="JPY">JPY</option>
-    </select>
+    <select id="toCurrency"></select>
     <br><br>
+
     <button type="submit">Convertir</button>
-    <h2 id="result"></h2>
-    
-   </form>
+  </form>
+
+  <h2 id="result">Le résultat apparaîtra ici</h2>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
+
