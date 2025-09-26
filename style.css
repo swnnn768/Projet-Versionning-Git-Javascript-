@@ -67,8 +67,98 @@ h2 {
     margin-top: 20px;
 }
 
-h3 {
-    text-align: center;
-    color: #000000;
-    margin-top: 10px;
+
+.history-section {
+    background: #f8f9fa;
+    padding: 40px;
+    border-top: 1px solid #e1e5e9;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.history-header h2 {
+    color: #333;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.history-stats {
+    color: #666;
+    font-size: 0.9rem;
+    background: #e9ecef;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.clear-history-btn {
+    background: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clear-history-btn:hover {
+    background: #c82333;
+    transform: translateY(-1px);
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.history-item {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-left: 4px solid #4facfe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #333;
+  white-space: nowrap;
+}
+
+.history-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-left-color: #667eea;
+}
+
+/* Styling the date text */
+.search-date {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Styling the query */
+.search-query {
+  font-weight: 500;
+  color: #555;
+}
+
+/* Styling the count */
+.search-count {
+  font-size: 0.9rem;
+  color: #666;
 }
